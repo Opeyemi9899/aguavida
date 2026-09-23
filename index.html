@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AGUAVIDA — Tequila, Reimagined</title>
+<meta name="description" content="AGUAVIDA. Tequila, reimagined. A cinematic brand experience. Blanco, Reposado, Añejo, Extra Añejo." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Archivo:wght@300;400;500;600&family=Archivo+Expanded:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/main.css" />
+<script type="importmap">
+{ "imports": {
+  "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+}}
+</script>
+</head>
+<body data-theme="ivory">
+
+<div id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <div class="loader-word">AGUAVIDA</div>
+    <div class="loader-sub"><span id="loader-pct">00</span> — TEQUILA, REIMAGINED</div>
+    <div class="loader-bar"><i id="loader-bar-fill"></i></div>
+  </div>
+</div>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="scroll-progress" aria-hidden="true"><i id="scroll-progress-fill"></i></div>
+
+<header id="site-nav">
+  <a class="brand" href="#opening">AGUAVIDA<sup>®</sup></a>
+  <nav class="nav-links">
+    <a href="#variants" data-link>Collection</a>
+    <a href="#origin" data-link>Story</a>
+    <a href="#making" data-link>Craft</a>
+    <a href="#final" data-link>Contact</a>
+    <a href="#collection" class="nav-shop" data-link>Shop ↗</a>
+  </nav>
+  <button id="menu-btn" aria-label="Menu"><span></span><span></span></button>
+</header>
+
+<div id="mobile-menu" aria-hidden="true">
+  <a href="#variants">Collection</a>
+  <a href="#origin">Story</a>
+  <a href="#making">Craft</a>
+  <a href="#final">Contact</a>
+  <div class="mm-foot">JALISCO, MEXICO — 20.70° N</div>
+</div>
+
+<!-- Fixed 3D stage: the protagonist bottle. Swappable with GLB. -->
+<canvas id="bottle-canvas" aria-label="Aguavida bottle 3D placeholder"></canvas>
+<div id="canvas-fallback" hidden>
+  <div class="css-bottle hero-css-bottle">
+    <div class="cb-cap"></div><div class="cb-neck"></div>
+    <div class="cb-body"><div class="cb-liquid"></div><div class="cb-label"><em>AGUAVIDA</em><span>BLANCO — PLACEHOLDER</span></div></div>
+  </div>
+</div>
+
+<main id="smooth-content">
+
+  <!-- ============ 01 OPENING ============ -->
+  <section id="opening" class="scene scene-opening" data-nav="light">
+    <div class="opening-top-row">
+      <span>N°01 — JALISCO, MEXICO</span>
+      <span>100% AGAVE AZUL</span>
+      <span class="hide-m">EST. MMXXVI</span>
+    </div>
+    <h1 class="mega" id="opening-title">
+      <span class="line"><span>TEQUILA,</span></span>
+      <span class="line"><span><em>REIMAGINED.</em></span></span>
+    </h1>
+    <p class="opening-sub" id="opening-sub">A cinematic spirit — earth, fire and patience,<br/>bottled in four acts.</p>
+    <div class="opening-side vertical">SCROLL — THE BOTTLE IS THE STORY</div>
+    <div class="opening-hint"><i></i>SCROLL TO ROTATE</div>
+    <div class="opening-meta">
+      <span>BLANCO · REPOSADO · AÑEJO · EXTRA AÑEJO</span>
+      <span class="ph-tag">3D PLACEHOLDER — SWAPS FOR GLB</span>
+    </div>
+  </section>
+
+  <!-- ============ 02 THE BOTTLE ============ -->
+  <section id="bottle-study" class="scene scene-bottle" data-nav="light">
+    <div class="pin-wrap">
+      <div class="bottle-copy bottle-copy-front">
+        <p class="kicker">02 — THE OBJECT</p>
+        <h2>One bottle.<br/><em>Held to the light.</em></h2>
+      </div>
+      <div class="rotation-readout">
+        <div class="rr-row"><span>ANGLE</span><strong id="rr-angle">000°</strong></div>
+        <div class="rr-row"><span>FACE</span><strong id="rr-face">FRONT</strong></div>
+        <div class="rr-track"><i id="rr-fill"></i></div>
+        <div class="rr-marks"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+      </div>
+      <div class="bottle-copy bottle-copy-back">
+        <p>Heavy glass. A clay-sealed cap.<br/>A label set like a colophon.</p>
+        <p class="ph-tag">DRAG OF SCROLL = PHYSICAL ROTATION</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 VARIANTS — horizontal chapters ============ -->
+  <section id="variants" class="scene scene-variants" data-nav="dark">
+    <div class="hwrap">
+      <div class="htrack" id="htrack">
+
+        <article class="chapter ch-intro">
+          <p class="kicker light">03 — THE FOUR ACTS</p>
+          <h2 class="chapter-title">Four<br/><em>tempers</em> of<br/>one agave.</h2>
+          <p class="chapter-note">Keep scrolling — each variant is its own world.</p>
+          <div class="chapter-count">01 / 04 →</div>
+        </article>
+
+        <article class="chapter ch-blanco" data-variant="blanco" data-nav="light">
+          <div class="ch-bg-word" aria-hidden="true">BLANCO</div>
+          <div class="ch-grid">
+            <div class="ch-text">
+              <p class="v-index">VARIANT 01</p>
+              <h3>BLANCO</h3>
+              <p class="v-desc">Unrested. Electric. White pepper, raw agave, lime leaf. Bottled 48 hours after distillation.</p>
+              <ul class="v-specs"><li>40% ABV</li><li>RESTED 0 MO</li><li>TASTE — CITRUS / HERB</li></ul>
+            </div>
+            <div class="ch-bottle">
+              <div class="css-bottle variant-bottle vb-blanco">
+                <div class="cb-cap"></div><div class="cb-neck"></div>
+                <div class="cb-body"><div class="cb-liquid"></div><div class="cb-label"><em>AGUAVIDA</em><span>BLANCO · Nº 01</span></div></div>
+                <div class="cb-shadow"></div>
+              </div>
+              <p class="ph-tag">BOTTLE PLACEHOLDER — GLB SLOT 01</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="chapter ch-reposado" data-variant="reposado" data-nav="light">
+          <div class="ch-bg-word" aria-hidden="true">REPOSADO</div>
+          <div class="ch-grid">
+            <div class="ch-text">
+              <p class="v-index">VARIANT 02</p>
+              <h3>REPO&shy;SADO</h3>
+              <p class="v-desc">Seven months in ex-bourbon oak. Warm amber. Vanilla husk, dried apricot, soft smoke.</p>
+              <ul class="v-specs"><li>40% ABV</li><li>RESTED 7 MO</li><li>TASTE — HONEY / OAK</li></ul>
+            </div>
+            <div class="ch-bottle">
+              <div class="css-bottle variant-bottle vb-reposado">
+                <div class="cb-cap"></div><div class="cb-neck"></div>
+                <div class="cb-body"><div class="cb-liquid"></div><div class="cb-label"><em>AGUAVIDA</em><span>REPOSADO · Nº 02</span></div></div>
+                <div class="cb-shadow"></div>
+              </div>
+              <p class="ph-tag">BOTTLE PLACEHOLDER — GLB SLOT 02</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="chapter ch-anejo" data-variant="anejo" data-nav="dark">
+          <div class="ch-bg-word" aria-hidden="true">AÑEJO</div>
+          <div class="ch-grid">
+            <div class="ch-text">
+              <p class="v-index">VARIANT 03</p>
+              <h3>AÑEJO</h3>
+              <p class="v-desc">Eighteen months in French oak. Deep clay and ember. Fig, cacao, black pepper, long dusk.</p>
+              <ul class="v-specs"><li>42% ABV</li><li>RESTED 18 MO</li><li>TASTE — CACAO / EMBER</li></ul>
+            </div>
+            <div class="ch-bottle">
+              <div class="css-bottle variant-bottle vb-anejo">
+                <div class="cb-cap"></div><div class="cb-neck"></div>
+                <div class="cb-body"><div class="cb-liquid"></div><div class="cb-label"><em>AGUAVIDA</em><span>AÑEJO · Nº 03</span></div></div>
+                <div class="cb-shadow"></div>
+              </div>
+              <p class="ph-tag">BOTTLE PLACEHOLDER — GLB SLOT 03</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="chapter ch-extra" data-variant="extra" data-nav="dark">
+          <div class="ch-bg-word" aria-hidden="true">EXTRA</div>
+          <div class="ch-grid">
+            <div class="ch-text">
+              <p class="v-index">VARIANT 04</p>
+              <h3>EXTRA<br/>AÑEJO</h3>
+              <p class="v-desc">Four years. Our rarest rest. Agave green shadow, pale gold light. Leather, tobacco flower, stone fruit.</p>
+              <ul class="v-specs"><li>44% ABV</li><li>RESTED 48 MO</li><li>TASTE — LEATHER / GOLD</li></ul>
+            </div>
+            <div class="ch-bottle">
+              <div class="css-bottle variant-bottle vb-extra">
+                <div class="cb-cap"></div><div class="cb-neck"></div>
+                <div class="cb-body"><div class="cb-liquid"></div><div class="cb-label"><em>AGUAVIDA</em><span>EXTRA AÑEJO · Nº 04</span></div></div>
+                <div class="cb-shadow"></div>
+              </div>
+              <p class="ph-tag">BOTTLE PLACEHOLDER — GLB SLOT 04</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 ORIGIN ============ -->
+  <section id="origin" class="scene scene-origin" data-nav="dark">
+    <div class="origin-media">
+      <figure class="om om-1" data-speed="0.12">
+        <div class="img-ph agave-ph"><span>AGAVE FIELDS — IMAGE PLACEHOLDER · 16:9</span></div>
+        <figcaption>LOS ALTOS DE JALISCO — 1,900 M</figcaption>
+      </figure>
+      <figure class="om om-2" data-speed="-0.08">
+        <div class="img-ph land-ph"><span>MEXICAN LANDSCAPE — IMAGE PLACEHOLDER · 4:5</span></div>
+        <figcaption>VOLCANIC SOIL — TEQUILA VALLEY</figcaption>
+      </figure>
+      <figure class="om om-3" data-speed="0.2">
+        <div class="img-ph harvest-ph"><span>HARVEST / JIMADOR — IMAGE PLACEHOLDER</span></div>
+        <figcaption>THE JIMADOR — FIRST CUT</figcaption>
+      </figure>
+    </div>
+    <div class="origin-type">
+      <p class="kicker light">04 — ORIGIN</p>
+      <h2 class="origin-title"><span>FROM EARTH</span><span><em>TO SPIRIT.</em></span></h2>
+      <div class="origin-story">
+        <p>Eight years in volcanic soil. One morning of harvest. The piña — ninety kilos of patience — is split, roasted and pressed within hours.</p>
+        <p class="dim">Nothing hurried. Nothing wasted. This is the world behind the bottle — agave, altitude, hands.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 05 THE MAKING ============ -->
+  <section id="making" class="scene scene-making" data-nav="light">
+    <div class="making-pin">
+      <div class="making-head">
+        <p class="kicker">05 — THE MAKING</p>
+        <h2>Six quiet<br/><em>transformations.</em></h2>
+      </div>
+      <ol class="stages" id="stages">
+        <li class="stage is-active" data-stage="0"><span class="st-num">I</span><div><h4>AGAVE</h4><p>Blue agave, eight years in red earth.</p></div></li>
+        <li class="stage" data-stage="1"><span class="st-num">II</span><div><h4>HARVEST</h4><p>The jimador reads the plant like weather.</p></div></li>
+        <li class="stage" data-stage="2"><span class="st-num">III</span><div><h4>COOK</h4><p>Slow-roasted in stone ovens, 72 hours.</p></div></li>
+        <li class="stage" data-stage="3"><span class="st-num">IV</span><div><h4>DISTIL</h4><p>Double-distilled in copper. Cut with care.</p></div></li>
+        <li class="stage" data-stage="4"><span class="st-num">V</span><div><h4>REST</h4><p>Oak decides the temper — 0 to 48 months.</p></div></li>
+        <li class="stage" data-stage="5"><span class="st-num">VI</span><div><h4>BOTTLE</h4><p>Heavy glass, clay seal, numbered by hand.</p></div></li>
+      </ol>
+      <div class="making-visual">
+        <div class="img-ph making-ph" id="making-ph"><span id="making-ph-label">CRAFTSMANSHIP — IMAGE PLACEHOLDER · I / AGAVE</span></div>
+        <div class="making-progress"><i id="making-fill"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 06 THE COLLECTION ============ -->
+  <section id="collection" class="scene scene-collection" data-nav="light">
+    <p class="kicker">06 — THE COLLECTION</p>
+    <h2 class="collection-title">Four objects,<br/><em>one still life.</em></h2>
+    <div class="still-life" id="still-life">
+      <div class="css-bottle still s1"><div class="cb-cap"></div><div class="cb-neck"></div><div class="cb-body"><div class="cb-liquid"></div><div class="cb-label"><em>AGUAVIDA</em><span>BLANCO</span></div></div><div class="cb-shadow"></div></div>
+      <div class="css-bottle still s2"><div class="cb-cap"></div><div class="cb-neck"></div><div class="cb-body"><div class="cb-liquid"></div><div class="cb-label"><em>AGUAVIDA</em><span>REPOSADO</span></div></div><div class="cb-shadow"></div></div>
+      <div class="css-bottle still s3"><div class="cb-cap"></div><div class="cb-neck"></div><div class="cb-body"><div class="cb-liquid"></div><div class="cb-label"><em>AGUAVIDA</em><span>AÑEJO</span></div></div><div class="cb-shadow"></div></div>
+      <div class="css-bottle still s4"><div class="cb-cap"></div><div class="cb-neck"></div><div class="cb-body"><div class="cb-liquid"></div><div class="cb-label"><em>AGUAVIDA</em><span>EXTRA</span></div></div><div class="cb-shadow"></div></div>
+      <div class="still-caption">STILL LIFE Nº 1 — <span class="ph-tag inline">BOTTLE PLACEHOLDERS · REPLACE WITH GLB QUARTET</span></div>
+    </div>
+    <div class="collection-row">
+      <span>BLANCO — 01</span><span>REPOSADO — 02</span><span>AÑEJO — 03</span><span>EXTRA AÑEJO — 04</span>
+    </div>
+  </section>
+
+  <!-- ============ 07 STATEMENT ============ -->
+  <section id="statement" class="scene scene-statement" data-nav="dark">
+    <p class="kicker light center">07 — THE BELIEF</p>
+    <h2 class="statement" id="statement-text">MADE FOR THE MOMENTS THAT MATTER.</h2>
+    <p class="statement-sub">Pour slowly. Stay late.</p>
+  </section>
+
+  <!-- ============ 08 FINAL ============ -->
+  <section id="final" class="scene scene-final" data-nav="light">
+    <div class="final-copy">
+      <p class="kicker">08 — THE RETURN</p>
+      <h2>DISCOVER<br/><em>AGUAVIDA.</em></h2>
+      <p class="final-desc">Blanco · Reposado · Añejo · Extra Añejo.<br/>Numbered bottles from a single estate.</p>
+      <div class="final-cta-row">
+        <a class="btn-solid" href="#collection">Explore the collection</a>
+        <a class="btn-ghost" href="#opening">Find a bottle ↗</a>
+      </div>
+      <p class="ph-tag">FINAL 3D MOMENT — LIGHTING + CAMERA DOLLY ON SCROLL</p>
+    </div>
+    <footer class="site-footer">
+      <div class="f-brand">AGUAVIDA<sup>®</sup></div>
+      <div class="f-links"><a href="#variants">Collection</a><a href="#origin">Story</a><a href="#making">Craft</a><a href="#final">Contact</a></div>
+      <div class="f-legal">© MMXXVI AGUAVIDA · JALISCO, MEXICO · PLEASE SIP RESPONSIBLY · 40–44% ABV</div>
+    </footer>
+  </section>
+
+</main>
+
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

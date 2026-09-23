@@ -1,0 +1,19 @@
+# OS / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# Temp / logs
+*.log
+*.out
+*.tmp
+
+# Local large binaries (keep GLBs / video out unless deliberately added)
+# Uncomment to allow tracking production assets:
+# !assets/glb/*.glb
+# !assets/video/*
+
+# Server / tooling
+node_modules/
