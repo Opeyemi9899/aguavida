@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================================
+    SEO: EDIT HERE
+    - Replace [YOUR WEBSITE URL] with your real domain, e.g. https://www.preciousmotion.com/
+    - Replace [YOUR SOCIAL PREVIEW IMAGE] with your preview image URL, e.g. https://www.preciousmotion.com/preview.jpg
+    - Title and description already mention "AI video generation" for search.
+  ============================================================= -->
+  <title>Precious Motion | AI Video Generation for Brands and Businesses</title>
+  <meta name="description" content="Precious Motion creates cinematic AI video generation for brands: AI product ads, brand films, explainers, reels, music videos and talking head videos. Based in Akure, working worldwide.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Precious Motion | AI Videos That Stop the Scroll">
+  <meta property="og:description" content="Cinematic AI video generation for brands. Product ads, brand films, reels, music videos and more. Based in Akure, creating worldwide.">
+  <!-- TODO: set your real website URL below -->
+  <meta property="og:url" content="[YOUR WEBSITE URL]">
+  <!-- TODO: set your real social preview image below (1200x630 JPG recommended) -->
+  <meta property="og:image" content="[YOUR SOCIAL PREVIEW IMAGE]">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Structured data: LocalBusiness / ProfessionalService -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Precious Motion",
+    "founder": { "@type": "Person", "name": "Opeyemi Precious" },
+    "description": "AI video generation for brands, businesses and individuals. AI product ads, brand videos, explainers, reels, music videos, avatars and cinematic shorts.",
+    "areaServed": "Worldwide",
+    "address": { "@type": "PostalAddress", "addressLocality": "Akure", "addressCountry": "NG" }
+  }
+  </script>
+
+  <!-- Google Fonts with system fallbacks (see styles.css) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2307080A'/%3E%3Ccircle cx='16' cy='16' r='9' fill='%23D6FF3B'/%3E%3Cpolygon points='14,12 20,16 14,20' fill='%2307080A'/%3E%3C/svg%3E">
+</head>
+<body id="top">
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================================================
+    HEADER
+    TO CHANGE BRAND NAME: edit the logo text below and the footer brand.
+    Nav links: Work, Services, Process, Packages, Contact.
+  ============================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="wrap header-inner">
+      <!-- EDIT BRAND NAME HERE: "Precious Motion" -->
+      <a class="logo" href="#top" aria-label="Precious Motion home">
+        <span class="logo-mark" aria-hidden="true"><span class="logo-play"></span></span>
+        <span class="logo-type">Precious<span class="logo-accent">Motion</span></span>
+      </a>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#packages">Packages</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-small nav-cta" href="#contact">Get a quote</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-small header-quote" href="#contact">Get a quote</a>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================================================
+      HERO
+      Headline is fixed per brief. Edit supporting copy below if needed.
+    ============================================================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <!-- Cinematic animated background -->
+      <div class="hero-bg" id="heroBg" aria-hidden="true">
+        <div class="hero-gradient"></div>
+        <div class="hero-grain"></div>
+        <div class="film-strip top"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="film-strip bottom"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      </div>
+
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="rec-dot" aria-hidden="true"></span> AI video studio for brands <span class="timecode" aria-hidden="true">00:00:03:12</span></p>
+          <h1 id="hero-title">AI Videos That Stop the Scroll.</h1>
+          <p class="lede">I create cinematic AI product ads, brand films and social content for businesses that want attention, clarity and style in every frame.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-lime" href="#contact">Get a video quote</a>
+            <a class="btn btn-ghost" href="#work">See the work</a>
+          </div>
+          <p class="location-line">Based in Akure. Creating for brands worldwide.</p>
+          <div class="hero-meta">
+            <button class="pause-btn" id="motionPause" aria-pressed="false">Pause background motion</button>
+            <span class="hero-note">Creator: Opeyemi Precious</span>
+          </div>
+        </div>
+
+        <!-- Prompt to Possibility: creative concept demo, NOT a generator -->
+        <div class="prompt-demo reveal">
+          <div class="prompt-demo-head">
+            <p class="prompt-kicker">Creative concept</p>
+            <h2>From prompt to possibility</h2>
+            <p>Drag the slider to preview how a simple idea becomes a graded cinematic frame. This is a style illustration, not a working generator or client work.</p>
+          </div>
+          <div class="prompt-stage" id="promptStage" role="img" aria-label="Concept illustration showing an idea turning into a cinematic frame as the slider moves">
+            <div class="prompt-layer prompt-layer-idea" aria-hidden="true">
+              <p class="prompt-text">"a luxury cream jar, soft studio light, slow orbit"</p>
+              <p class="prompt-tag">Idea</p>
+            </div>
+            <div class="prompt-layer prompt-layer-grade" id="promptGrade" aria-hidden="true">
+              <p class="grade-title">MIDNIGHT GLOW</p>
+              <p class="grade-sub">Product film concept</p>
+              <div class="grade-bar"><span></span></div>
+              <p class="prompt-tag">Possibility</p>
+            </div>
+            <div class="prompt-frame" aria-hidden="true"><span>16:9</span><span id="promptPct">50%</span></div>
+          </div>
+          <label class="slider-label" for="promptSlider">Reveal: idea to final look</label>
+          <input type="range" id="promptSlider" min="0" max="100" value="50" step="1" aria-describedby="promptHelp">
+          <p class="slider-help" id="promptHelp">Use left and right arrow keys for precise control. Visual only.</p>
+          <ol class="prompt-steps">
+            <li data-step="0">Prompt</li>
+            <li data-step="1">Direction</li>
+            <li data-step="2">Grade</li>
+            <li data-step="3">Delivery</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Logo style client strip (no invented logos: sectors only) -->
+      <div class="wrap hero-sectors" aria-label="Who I create for">
+        <p>Built for beauty, spa, fashion, food, real estate, coaches and startups.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+      WHAT I CREATE / SERVICES
+      TO EDIT COPY: change headings and paragraphs below.
+    ============================================================= -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">What I create</p>
+          <h2 id="services-title">Video your customers actually remember.</h2>
+          <p class="section-lede">Every piece is planned, directed and edited for one job: help your offer land fast and look premium.</p>
+        </div>
+
+        <div class="service-list">
+          <article class="service-row reveal">
+            <span class="service-num" aria-hidden="true">01</span>
+            <div><h3>AI product ads</h3><p>Close up product films that show texture, packaging and detail in beautiful light. Made to lift clicks and sales on your store and ads.</p></div>
+            <span class="service-tag">For launches and sales</span>
+          </article>
+          <article class="service-row reveal">
+            <span class="service-num" aria-hidden="true">02</span>
+            <div><h3>AI brand videos and explainers</h3><p>Clear, confident films that explain what you do, who it is for and why it matters. Ideal for homepages, pitches and about pages.</p></div>
+            <span class="service-tag">For clarity and trust</span>
+          </article>
+          <article class="service-row reveal">
+            <span class="service-num" aria-hidden="true">03</span>
+            <div><h3>AI social media reels</h3><p>Vertical, fast paced cuts sized for Instagram, TikTok and Shorts. Hooks, captions and rhythm built for the feed.</p></div>
+            <span class="service-tag">For daily visibility</span>
+          </article>
+          <article class="service-row reveal">
+            <span class="service-num" aria-hidden="true">04</span>
+            <div><h3>AI music videos</h3><p>Stylised worlds, characters and scenes that match your sound. From lyric visuals to full cinematic treatments.</p></div>
+            <span class="service-tag">For artists and labels</span>
+          </article>
+          <article class="service-row reveal">
+            <span class="service-num" aria-hidden="true">05</span>
+            <div><h3>AI avatars and talking head videos</h3><p>A lifelike presenter who delivers your script without cameras or studios. Great for courses, tips and announcements.</p></div>
+            <span class="service-tag">For face to camera, minus the shoot</span>
+          </article>
+          <article class="service-row reveal">
+            <span class="service-num" aria-hidden="true">06</span>
+            <div><h3>Cinematic AI shorts</h3><p>Short narrative films with mood, pacing and polish. Made for brands that want art level storytelling.</p></div>
+            <span class="service-tag">For story and style</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+      VIDEO SHOWCASE
+      TO ADD YOUR VIDEOS:
+      1. Upload files to a "videos" folder and posters to a "posters" folder.
+      2. Replace each data-src with your file, e.g. data-src="videos/product-ad.mp4"
+      3. Replace each data-poster with your poster, e.g. data-poster="posters/product-ad.jpg"
+      How it works: src and poster stay empty until the visitor presses play
+      or hovers on desktop. JavaScript then copies data-src to src and
+      data-poster to poster, so nothing downloads before interaction.
+      To add captions later, place inside <video>:
+        <track kind="captions" src="captions/product-ad.vtt" srclang="en" label="English captions">
+    ============================================================= -->
+    <section class="section showcase" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Selected directions</p>
+          <h2 id="work-title">A feel for the frame.</h2>
+          <p class="section-lede">Sample slots are ready for new work. Each card will play your film on demand, with no heavy auto downloads.</p>
+        </div>
+
+        <div class="video-grid">
+          <!-- Card 1 -->
+          <article class="video-card v1 reveal">
+            <div class="video-frame">
+              <video muted loop playsinline preload="none" data-src="videos/product-ad.mp4" data-poster="posters/product-ad.jpg" aria-label="Product advertising preview video">
+                <!-- CAPTIONS: add your <track> element here when ready -->
+              </video>
+              <div class="video-fallback" aria-hidden="true"><span>Product</span></div>
+              <p class="soon-badge">Preview coming soon</p>
+              <button class="play-btn" type="button" aria-label="Play product advertising preview" aria-pressed="false"><span aria-hidden="true">▶</span></button>
+              <p class="video-error" hidden></p>
+            </div>
+            <div class="video-info"><h3>Product advertising</h3><p>Packshots, textures and hero shots that make shelves and feeds shine.</p></div>
+          </article>
+          <!-- Card 2 -->
+          <article class="video-card v2 reveal">
+            <div class="video-frame">
+              <video muted loop playsinline preload="none" data-src="videos/brand-story.mp4" data-poster="posters/brand-story.jpg" aria-label="Brand storytelling preview video"></video>
+              <div class="video-fallback" aria-hidden="true"><span>Brand</span></div>
+              <p class="soon-badge">Preview coming soon</p>
+              <button class="play-btn" type="button" aria-label="Play brand storytelling preview" aria-pressed="false"><span aria-hidden="true">▶</span></button>
+              <p class="video-error" hidden></p>
+            </div>
+            <div class="video-info"><h3>Brand storytelling</h3><p>Short brand films that carry your values, voice and visual world.</p></div>
+          </article>
+          <!-- Card 3 -->
+          <article class="video-card v3 reveal">
+            <div class="video-frame">
+              <video muted loop playsinline preload="none" data-src="videos/music-video.mp4" data-poster="posters/music-video.jpg" aria-label="Music video preview"></video>
+              <div class="video-fallback" aria-hidden="true"><span>Music</span></div>
+              <p class="soon-badge">Preview coming soon</p>
+              <button class="play-btn" type="button" aria-label="Play music video preview" aria-pressed="false"><span aria-hidden="true">▶</span></button>
+              <p class="video-error" hidden></p>
+            </div>
+            <div class="video-info"><h3>Music videos</h3><p>Bold scenes and characters cut to the rhythm of the track.</p></div>
+          </article>
+          <!-- Card 4 -->
+          <article class="video-card v4 reveal">
+            <div class="video-frame">
+              <video muted loop playsinline preload="none" data-src="videos/social-content.mp4" data-poster="posters/social-content.jpg" aria-label="Social media content preview video"></video>
+              <div class="video-fallback" aria-hidden="true"><span>Social</span></div>
+              <p class="soon-badge">Preview coming soon</p>
+              <button class="play-btn" type="button" aria-label="Play social media preview" aria-pressed="false"><span aria-hidden="true">▶</span></button>
+              <p class="video-error" hidden></p>
+            </div>
+            <div class="video-info"><h3>Social media content</h3><p>Vertical edits with hooks and captions, ready to post.</p></div>
+          </article>
+        </div>
+
+        <div class="center reveal">
+          <p class="cta-note">Have a product, song or idea in mind? Send it over for a quote.</p>
+          <a class="btn btn-lime" href="#contact">Get a video quote</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+      HOW IT WORKS / PROCESS
+    ============================================================= -->
+    <section class="section process" id="process" aria-labelledby="process-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">How it works</p>
+          <h2 id="process-title">Simple from first message to final file.</h2>
+        </div>
+        <ol class="process-track">
+          <li class="reveal"><span class="step" aria-hidden="true">01</span><h3>Share your idea</h3><p>Tell me about your product, song or message on WhatsApp or the form below. Links and references help.</p></li>
+          <li class="reveal"><span class="step" aria-hidden="true">02</span><h3>Agree concept, scope and quote</h3><p>We lock the look, length, deliverables and price before anything is generated. No surprises.</p></li>
+          <li class="reveal"><span class="step" aria-hidden="true">03</span><h3>Generate, edit and refine</h3><p>I direct the AI visuals, then edit, grade and add sound for a clean, human finish.</p></li>
+          <li class="reveal"><span class="step" aria-hidden="true">04</span><h3>Review and receive</h3><p>You review the cut, we polish agreed revisions, and you get export ready files for each platform.</p></li>
+        </ol>
+        <div class="timeline-bar" aria-hidden="true"><span></span><i></i><i></i><i></i></div>
+      </div>
+    </section>
+
+    <!-- WHY AI VIDEO -->
+    <section class="section why" aria-labelledby="why-title">
+      <div class="wrap why-grid">
+        <div class="reveal">
+          <p class="eyebrow">Why AI video</p>
+          <h2 id="why-title">Big look, lighter production.</h2>
+          <p class="section-lede">AI opens the door to shots that once needed full crews, sets and travel. You still get human direction in every choice.</p>
+          <a class="btn btn-ghost" href="#packages">See packages</a>
+        </div>
+        <ul class="why-list">
+          <li class="reveal"><h3>Less to organise</h3><p>No location hire, large crew or complex shoot days for many concepts. Your input stays focused on idea and feedback.</p></li>
+          <li class="reveal"><h3>A practical alternative to heavy shoots</h3><p>For stylised scenes and product worlds, AI can be a leaner route than traditional production. Scope and quote are agreed first.</p></li>
+          <li class="reveal"><h3>Try looks fast</h3><p>Test moods, colours and styles early, then commit to the strongest direction with confidence.</p></li>
+          <li class="reveal"><h3>Cinematic range</h3><p>From soft beauty light to bold music video worlds, explore visual ideas that suit your brand.</p></li>
+          <li class="reveal"><h3>Human story and edit</h3><p>Tools generate, people direct. Structure, pacing, sound and final polish come from hands on editing.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+      PACKAGES
+      TO EDIT PACKAGES AND PRICES: change names, text and price lines below.
+      Prices currently show "Custom quote". Add a price like "From ₦85,000"
+      when ready. Keep the data-package values in sync with the form options.
+    ============================================================= -->
+    <section class="section packages" id="packages" aria-labelledby="packages-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Packages</p>
+          <h2 id="packages-title">Pick a starting point.</h2>
+          <p class="section-lede">Scope, turnaround, revisions and usage are agreed before work begins, so you always know what is included.</p>
+        </div>
+        <div class="package-grid">
+          <article class="package reveal">
+            <h3>Launch</h3>
+            <p class="price">₦150,000</p>
+            <p>A focused video for one product or offer. Ideal for a first ad or announcement.</p>
+            <ul><li>One 30-second AI video, vertical plus square cutdowns</li><li>Captions and basic sound mix</li><li>2 rounds of revisions</li><li>Delivery in 5 days</li></ul>
+            <button class="btn btn-ghost package-btn" type="button" data-package="Launch package">Enquire about Launch</button>
+          </article>
+          <article class="package featured reveal">
+            <h3>Campaign</h3>
+            <p class="price">Custom quote</p>
+            <p>Coordinated videos or cutdowns for a campaign across feed, stories and ads.</p>
+            <ul><li>Up to three coordinated videos</li><li>Multiple ratios for each placement</li><li>Thumbnail frames and caption files</li></ul>
+            <button class="btn btn-lime package-btn" type="button" data-package="Campaign package">Enquire about Campaign</button>
+          </article>
+          <article class="package reveal">
+            <h3>Signature</h3>
+            <p class="price">Custom quote</p>
+            <p>A more ambitious film, music video or visual story with deeper direction.</p>
+            <ul><li>Concept development and style frames</li><li>Longer cinematic edit with sound design</li><li>Teaser cut for social</li></ul>
+            <button class="btn btn-ghost package-btn" type="button" data-package="Signature package">Enquire about Signature</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+      TESTIMONIALS (empty state)
+      TO ADD TESTIMONIALS: copy the commented example below into
+      .testimonial-list, replace the quote, name and business, and only
+      use feedback you have written permission to publish. Keep star
+      ratings and logos out unless the client approves them.
+    ============================================================= -->
+    <section class="section testimonials" aria-labelledby="testimonials-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Kind words</p>
+          <h2 id="testimonials-title">Client feedback.</h2>
+        </div>
+        <div class="testimonial-empty reveal">
+          <p class="empty-title">New reel, fresh feedback soon.</p>
+          <p>Approved client reviews will appear here once projects wrap. If we have worked together, send your words and I will feature them with your permission.</p>
+          <a class="btn btn-ghost" href="#contact">Start your project</a>
+        </div>
+        <div class="testimonial-list">
+          <!-- EXAMPLE (do not publish until approved):
+          <figure class="testimonial">
+            <blockquote><p>Precious turned our product photos into a clean ad we now run everywhere.</p></blockquote>
+            <figcaption><strong>Client Name</strong><span>Business Name, City</span></figcaption>
+          </figure>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" aria-labelledby="faq-title">
+      <div class="wrap faq-grid">
+        <div class="reveal">
+          <p class="eyebrow">Questions</p>
+          <h2 id="faq-title">Good to know.</h2>
+          <p>Straight answers before you message. Anything else, ask on WhatsApp.</p>
+        </div>
+        <div class="faq-list reveal">
+          <details><summary>Do I need a script or existing footage?</summary><p>No. A short note about your offer is enough to start. I can shape the script and visuals from your brief, or work from your draft if you have one.</p></details>
+          <details><summary>What affects turnaround time?</summary><p>Length, number of scenes, revisions and how fast feedback arrives. We agree a clear timeline with your quote before production.</p></details>
+          <details><summary>Can you use my brand colours, logo and product images?</summary><p>Yes. Send your logo, colours, fonts and product photos or links. They guide the look so the final film feels truly yours.</p></details>
+          <details><summary>What about commercial usage, music and asset licensing?</summary><p>Usage, platforms and duration are agreed in writing before work starts. Music and stock assets are licensed for your agreed use, and sources are shared on request.</p></details>
+          <details><summary>Do you work with international clients?</summary><p>Yes. I am based in Akure and create for brands worldwide. We communicate on WhatsApp and email, with files delivered online.</p></details>
+          <details><summary>How do revisions work?</summary><p>Each package includes an agreed number of revision rounds. Change requests are grouped per round so we stay fast and focused.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+      CONTACT
+      TO CHANGE CONTACT INFO: open script.js and edit CONTACT at the top.
+      The form builds a WhatsApp message when a number is set, or a
+      copy only brief when it is not. No data is stored or sent elsewhere.
+    ============================================================= -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let&rsquo;s Make Something Worth Watching.</h2>
+          <p class="section-lede">Tell me about your project. Prepare your brief below, then send it on WhatsApp or copy it for later.</p>
+          <ul class="contact-lines">
+            <li id="contactWhats">WhatsApp: <span>details coming soon</span></li>
+            <li id="contactMail">Email: <span>details coming soon</span></li>
+            <li>Location: Akure, Nigeria. Remote worldwide.</li>
+          </ul>
+        </div>
+        <form class="enquiry reveal" id="enquiryForm" novalidate>
+          <div class="field">
+            <label for="fName">Your name</label>
+            <input id="fName" name="name" type="text" autocomplete="name" placeholder="Your full name" required>
+          </div>
+          <div class="field">
+            <label for="fService">Service or package</label>
+            <select id="fService" name="service">
+              <option>AI product ad</option>
+              <option>AI brand video or explainer</option>
+              <option>AI social media reels</option>
+              <option>AI music video</option>
+              <option>AI avatar or talking head</option>
+              <option>Cinematic AI short</option>
+              <option value="Launch package">Launch package</option>
+              <option value="Campaign package">Campaign package</option>
+              <option value="Signature package">Signature package</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="fEmail">Email (optional)</label>
+            <input id="fEmail" name="email" type="email" autocomplete="email" placeholder="you@brand.com">
+          </div>
+          <div class="field">
+            <label for="fBrief">Project brief</label>
+            <textarea id="fBrief" name="brief" rows="5" placeholder="What should the video show? Add links to your product, song or references." required></textarea>
+          </div>
+          <p class="form-error" id="formError" hidden>Please add your name and a short brief so your enquiry is clear.</p>
+          <button class="btn btn-lime" type="submit" id="prepareBtn">Prepare WhatsApp enquiry</button>
+          <div class="brief-preview" id="briefPreview" hidden>
+            <h3>Review your enquiry</h3>
+            <p id="briefText"></p>
+            <div class="brief-actions">
+              <a class="btn btn-lime" id="waContinue" href="#" target="_blank" rel="noopener" hidden>Continue to WhatsApp</a>
+              <button class="btn btn-ghost" type="button" id="copyBrief">Copy brief</button>
+            </div>
+            <p class="brief-note" id="briefNote"></p>
+            <label class="manual-label" for="manualCopy">If copy fails, select and copy manually:</label>
+            <textarea id="manualCopy" rows="4" readonly></textarea>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <!-- EDIT BRAND + LOCATION HERE -->
+      <p class="footer-brand">Precious Motion <span>© <span id="year">2026</span></span></p>
+      <p class="footer-loc">Akure, Nigeria. Creating worldwide.</p>
+      <nav class="footer-social" id="footerSocial" aria-label="Social profiles" hidden></nav>
+      <a class="back-top" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp: destination is set in script.js. Hidden until a real number exists, except it scrolls to contact. -->
+  <a class="wa-float" id="waFloat" href="#contact" aria-label="Chat on WhatsApp (contact details coming soon)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.7-1.3 1.3-1.8 1.4-.5 0-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.5c-.2.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.4 1.2 2.5 1.6 2.9 1.8.3.2.5.1.7-.1l.8-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.4 0 .1 0 .7-.2 1.4Z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
