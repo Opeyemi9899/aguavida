@@ -311,6 +311,26 @@ input[type="range"] { width: 100%; min-height: 44px; accent-color: var(--lime); 
 .faq-list summary:hover { color: var(--lime); }
 .faq-list p { color: var(--muted); margin-bottom: 0; }
 
+/* 11b. ABOUT / CREATOR PHOTO */
+.about { border-top: 1px solid var(--line); }
+.about-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 2.5rem; align-items: center; }
+.about-photo { position: relative; }
+.about-photo img {
+  position: relative; z-index: 1; width: 100%; aspect-ratio: 4 / 5; object-fit: cover;
+  border-radius: var(--radius); border: 1px solid var(--line); background: var(--bg-3);
+}
+.about-photo img[hidden] { display: none; }
+.about-mono {
+  position: absolute; inset: 0; bottom: 3.2rem; z-index: 0;
+  display: grid; place-items: center; border-radius: var(--radius);
+  border: 1px solid rgba(214,255,59,0.4);
+  background: radial-gradient(24rem 16rem at 70% 20%, rgba(214,255,59,0.22), transparent 60%),
+    linear-gradient(135deg, #1A1030, #0B0E1A);
+  font-family: var(--font-display); font-weight: 700; font-size: clamp(4rem, 10vw, 6.5rem);
+  color: var(--lime); letter-spacing: -0.03em;
+}
+.about-caption { margin: 0.7rem 0 0; color: var(--faint); font-size: 0.95rem; }
+
 /* 12. CONTACT */
 .contact { background: linear-gradient(180deg, var(--bg) 0%, #0D0E18 100%); border-top: 1px solid var(--line); }
 .contact-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 2.5rem; align-items: start; }
@@ -357,7 +377,7 @@ input[type="range"] { width: 100%; min-height: 44px; accent-color: var(--lime); 
 
 /* 15. RESPONSIVE */
 @media (max-width: 960px) {
-  .hero-grid, .why-grid, .faq-grid, .contact-grid { grid-template-columns: 1fr; }
+  .hero-grid, .why-grid, .faq-grid, .contact-grid, .about-grid { grid-template-columns: 1fr; }
   .process-track { grid-template-columns: repeat(2, 1fr); }
   .package-grid { grid-template-columns: 1fr; max-width: 34rem; }
   .site-nav {
