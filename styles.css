@@ -152,12 +152,6 @@ body.paused .hero-gradient { animation-play-state: paused; }
   position: absolute; inset: 0; opacity: 0.5; mix-blend-mode: overlay;
   background-image: repeating-linear-gradient(0deg, rgba(255,255,255,0.025) 0 1px, transparent 1px 3px);
 }
-.film-strip {
-  position: absolute; left: 0; right: 0; display: flex; justify-content: space-around;
-  padding: 0.45rem 1rem; background: rgba(0,0,0,0.55); border-block: 1px solid var(--line);
-}
-.film-strip.top { top: 0; } .film-strip.bottom { bottom: 0; }
-.film-strip span { width: 26px; height: 14px; border-radius: 3px; border: 1px solid rgba(244,243,238,0.3); }
 .hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 3rem; align-items: start; }
 .rec-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #FF5C5C; animation: blink 1.6s infinite; }
 @keyframes blink { 50% { opacity: 0.25; } }
